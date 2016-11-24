@@ -21,6 +21,74 @@
 This was done in collaboration with Constantin Blach (s4329872).
 
 \section{} %1
+Initial state:
+
+\begin{tikzpicture}[
+	every node/.append style={minimum width=2em}
+	,level/.style={sibling distance=.5\linewidth/#1}
+	,b/.style={circle, draw, fill=black, text=white}
+	,r/.style={circle, draw, fill=red}
+]
+	\node [b] (A) {26}
+		child {
+			node [r] (B) {17}
+			child {
+				node [b] (D) {14}
+				child {
+					node [r] (H) {10}
+					child {
+						node [b] (N) {7}
+						child {
+							node [r] (T) {3}
+						}
+					}
+					child {
+						node [b] (O) {12}
+					}
+				}
+				child {
+					node [b] (I) {16}
+					child {
+						node [r] (P) {15}
+					}
+				}
+			}
+			child {
+				node [b] (E) {21}
+				child {
+					node [b] (J) {19}
+					child {
+						node [r] (Q) {20}
+					}
+				}
+				child {
+					node [b] (K) {23}
+				}
+			}
+		}
+		child {
+			node [r] (C) {41}
+			child {
+				node [r] (F) {30}
+				child {
+					node [b] (L) {28}
+				}
+				child {
+					node [b] (M) {38}
+					child {
+						node [r] (R) {35}
+					}
+					child {
+						node [r] (S) {39}
+					}
+				}
+			}
+			child {
+				node [b] (G) {47}
+			}
+		}
+	;
+\end{tikzpicture}
 
 \section{} %2
 
