@@ -185,7 +185,21 @@ We can calculate the maximum number of nodes which is $2^{2k - 1} + 1$.
 	]
 		\node [b] (A) {32};
 	\end{tikzpicture}
+
 	\item[Inserting 27]
+	\begin{tikzpicture}[
+		every node/.append style={minimum width=2em}
+		,level/.style={sibling distance=.5\linewidth/#1}
+		,b/.style={circle, draw, fill=black, text=white}
+		,r/.style={circle, draw, fill=red}
+		,baseline=(A.north)
+	]
+		\node [b] (A) {32}
+			child {
+				node [r, below left=of A] (B) {27}
+			}
+		;
+	\end{tikzpicture}
 	\item[Inserting 20]
 	\item[Inserting 15]
 	\item[Inserting 19]
