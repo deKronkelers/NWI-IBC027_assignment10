@@ -364,6 +364,33 @@ We can calculate the maximum number of nodes which is $2^{2k - 1} + 1$.
 	\end{enumerate}
 
 	\item[Inserting 33]
+	as the right child of 32. We can cimply color it red without violating any property.
+	\begin{tikzpicture}[
+		every node/.append style={circle, draw, minimum width=2em}
+		,level/.style={sibling distance=.5\linewidth/#1}
+		,b/.style={fill=black, text=white}
+		,r/.style={fill=red}
+		,baseline=(A.north)
+	]
+		\node [b] (A) {27}
+			child {
+				node [b] (B) {19}
+				child {
+					node [r] (D) {15}
+				}
+				child {
+					node [r] (E) {20}
+				}
+			}
+			child {
+				node [b] (C) {32}
+				child {
+					node [r, below right=of C] (F) {33}
+				}
+			}
+		;
+	\end{tikzpicture}
+
 	\item[Deleting 19]
 	\item[Deleting 32]
 \end{description}
