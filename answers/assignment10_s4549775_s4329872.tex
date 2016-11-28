@@ -168,6 +168,10 @@ Alternatively we could color it red which would violate property 4 ("If a node i
 
 \section{} %2
 
+The maximum height of a red-black tree is $2bh$, where $bh$ is the black height of the root node. Thus the maximum height of a red-black tree with $bh = k$ is $2k$. The leaf node $nil$ is always present so we need to add it as well, and subtract one from the exponent because the leaf node exists only once.
+
+We can calculate the maximum number of nodes which is $2^{2k - 1} + 1$.
+
 \section{} %3
 
 \section{} %4
