@@ -416,6 +416,25 @@ The minimum number of nodes means that we do not have any red leafs. This means 
 	\end{tikzpicture}
 
 	\item[Deleting 32]
+	\begin{tikzpicture}[
+		every node/.append style={circle, draw, minimum width=2em}
+		,level/.style={sibling distance=.5\linewidth/#1}
+		,b/.style={fill=black, text=white}
+		,r/.style={fill=red}
+		,baseline=(A.north)
+	]
+		\node [b] (A) {27}
+			child {
+				node [b] (B) {20}
+				child {
+					node [r, below left=of B] (D) {15}
+				}
+			}
+			child {
+				node [b] (C) {33}
+			}
+		;
+	\end{tikzpicture}
 \end{description}
 
 \section{} %4
