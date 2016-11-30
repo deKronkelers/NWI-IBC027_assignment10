@@ -37,7 +37,7 @@ Initial state:
 					child {
 						node [b] (N) {7}
 						child {
-							node [r] (T) {3}
+							node [r, below left=of N] (T) {3}
 						}
 					}
 					child {
@@ -47,7 +47,7 @@ Initial state:
 				child {
 					node [b] (I) {16}
 					child {
-						node [r] (P) {15}
+						node [r, below left=1em of I] (P) {15}
 					}
 				}
 			}
@@ -56,7 +56,7 @@ Initial state:
 				child {
 					node [b] (J) {19}
 					child {
-						node [r] (Q) {20}
+						node [r, below right=of J] (Q) {20}
 					}
 				}
 				child {
@@ -106,7 +106,7 @@ When adding the key 36 it is inserted at the following position:
 					child {
 						node [b] (N) {7}
 						child {
-							node [r] (T) {3}
+							node [r, below left=of N] (T) {3}
 						}
 					}
 					child {
@@ -116,7 +116,7 @@ When adding the key 36 it is inserted at the following position:
 				child {
 					node [b] (I) {16}
 					child {
-						node [r] (P) {15}
+						node [r, below left=1em of I] (P) {15}
 					}
 				}
 			}
@@ -125,7 +125,7 @@ When adding the key 36 it is inserted at the following position:
 				child {
 					node [b] (J) {19}
 					child {
-						node [r] (Q) {20}
+						node [r, below right=of J] (Q) {20}
 					}
 				}
 				child {
@@ -145,7 +145,7 @@ When adding the key 36 it is inserted at the following position:
 					child {
 						node [r] (R) {35}
 						child {
-							node [circle, draw] (U) {36}
+							node [circle, draw, below right=of R] (U) {36}
 						}
 					}
 					child {
