@@ -397,6 +397,10 @@ We can calculate the maximum number of nodes which is $2^{2k - 1} + 1$.
 
 \section{} %4
 
+You do not actually need parent pointers to traverse back up the tree because you begin by going down the tree and at this stage you can save the path you took to get to where you currently are. This could be done, for example, by using a recursive insertion function which would keep track of the path in the stack frames. Alternatively you could have an iterative traversal function and store a list containing all the nodes in the path to where we are now. This would be more efficient but also more complicated.
+
+In the recursive approach we would just fix the problem at the current node, then return, which gets us one level higher where we can proceed doing the same until we return from the oldest stack (that which contains the root node) frame and are done.
+
 \section{} %5
 
 \end{document}
