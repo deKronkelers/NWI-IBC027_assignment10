@@ -401,6 +401,8 @@ You do not actually need parent pointers to traverse back up the tree because yo
 
 In the recursive approach we would just fix the problem at the current node, then return, which gets us one level higher where we can proceed doing the same until we return from the oldest stack (that which contains the root node) frame and are done.
 
+The drawback of the recursive approach would be that you would have a lot of duplication because in each stack frame you would need to store more than one node because fixing one level requires some insight into the levels above. Many of the stack frames would contain overlapping information.
+
 \section{} %5
 
 \end{document}
