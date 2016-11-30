@@ -403,6 +403,11 @@ In the recursive approach we would just fix the problem at the current node, the
 
 The drawback of the recursive approach would be that you would have a lot of duplication because in each stack frame you would need to store more than one node because fixing one level requires some insight into the levels above. Many of the stack frames would contain overlapping information.
 
+\paragraph{Correctness \& Complexity}
+The correctness and complexity would carry over from the original algorithm because we do not change it. We just change how we retrieve parent nodes. Storing a constant amount of nodes in a stack frame is $O(1)$ and does not affect the complexity.
+
+The space complexity would be $O(\log n)$ because we need to store something constant ($O(1)$) for each node we visit which are $O(\log n)$ nodes.
+
 \section{} %5
 
 \end{document}
