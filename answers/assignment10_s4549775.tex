@@ -408,4 +408,10 @@ The space complexity would be $O(\log n)$ because we need to store something con
 
 \section{} %5
 
+You can transform any n-node binary search tree (BST) into a BST where all non-nil nodes are right children in $O(n)$ rotations. (You could also do this fore left children, the point is that we can reach this starting position in $O(n)$.)
+
+From this position we can make any BST we want to in another $O(n)$ rotations.
+
+We need a total of $O(2n) = O(n)$ rotations to transform any BST into any other BST. The rotations preserve the BST invariants.
+
 \end{document}
